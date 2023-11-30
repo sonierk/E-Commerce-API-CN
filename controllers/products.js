@@ -56,12 +56,11 @@ const updateProduct = async (req, res) => {
             return res.status(404).json({ msg: 'Product ID not found' })
         }
         res.status(200).json({ success: true, data: { product } })
-
     } catch (error) {
         res.status(500).json({ msg: error })
-
     }
 }
+
 
 module.exports = {
     getAllProducts,
@@ -69,5 +68,6 @@ module.exports = {
     updateProduct,
     getProduct,
     deleteProduct,
+    
 }
 

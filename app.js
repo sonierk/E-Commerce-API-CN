@@ -14,12 +14,6 @@ app.use('/api/v1/products', productRoute)
 // app.patch('/api/v1/priducts/:id') - update product
 // app.delete('api/v1/products/:id')    - delete products.
 
-
-
-
-
-
-
 const port = process.env.PORT
 
 const start = async () => {
@@ -31,7 +25,6 @@ const start = async () => {
         console.log(error)
     }
 }
-
 start()
 
 
